@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluation - Hospital Ratings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Evaluate Hospitals</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="signup.html">Signup</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+<main>
+    <div id="login-warning" class="form-message">You must login to evaluate hospitals!</div>
+    <div id="evaluation-container">
+        <form id="evaluationForm">
+            <label>Hospital:</label>
+            <select id="hospital" required>
+                <option value="">--Select--</option>
+                <option value="Kalkaal Hospital">Kalkaal Hospital</option>
+                <option value="Shafi Hospital">Shafi Hospital</option>
+                <option value="Digfeer Hospital">Digfeer Hospital</option>
+                <option value="Somali Sudanese Hospital">Somali Sudanese Hospital</option>
+            </select>
+
+            <!-- Ratings -->
+            <div class="rating" data-aspect="doctor">
+                <label>Doctor Professionalism:</label>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating" data-aspect="waiting">
+                <label>Waiting Time:</label>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating" data-aspect="cleanliness">
+                <label>Cleanliness:</label>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating" data-aspect="treatment">
+                <label>Treatment Effectiveness:</label>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+            <div class="rating" data-aspect="staff">
+                <label>Staff Friendliness:</label>
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+            </div>
+
+            <button type="submit">Submit Evaluation</button>
+            <button type="button" id="reset-eval">Reset</button>
+
+            <div class="stats">
+                <p>Total evaluations: <span id="total-evals">0</span></p>
+                <p>Last hospital evaluated: <span id="last-hospital">None</span></p>
+                <p>Average rating: <span id="avg-rating">0.0</span></p>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,75 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background: #f0f2f5;
+}
+header{
+    background:#008CBA;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+nav a{
+    margin:0 10px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+}
+main{
+    padding:20px;
+    max-width:1000px;
+    margin:auto;
+}
+section{
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+input, select, textarea, button{
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button{
+    background:#008CBA;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background:#005f75;
+}
+.rating span{
+    font-size:30px;
+    cursor:pointer;
+    color:#ccc;
+    transition:0.2s;
+}
+.rating span.hover, .rating span.selected{
+    color:#FFD700;
+}
+.form-message{
+    color:red;
+    font-weight:bold;
+}
+.stats p{
+    margin:5px 0;
+}
+.card{
+    background:#e0f7fa;
+    padding:15px;
+    border-radius:10px;
+    margin:10px;
+    display:inline-block;
+}
+.hero{
+    text-align:center;
+    margin-bottom:20px;
+}
